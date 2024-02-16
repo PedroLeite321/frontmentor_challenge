@@ -1,0 +1,24 @@
+:root   {
+    /* Tipografia / Typography */
+    --primary-title-size: 1.8em;
+    --paragraph-form-size: 1.2em;
+    --nav-form-size: 1em;
+    --primary-title-color: #303660;
+    --primary-button-color: #232742;
+    
+    /* Responsive image / Imagem responsiva */
+
+    /* Success message */
+    --secondary-button-sucess-area: 0.7em;
+    --secondary-paragraph-sucess-area: 0.7em;
+    
+}
+
+*   {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing:border-box;
+
+}
