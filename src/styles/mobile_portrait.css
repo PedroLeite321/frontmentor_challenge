@@ -23,24 +23,28 @@
         display:flex;
         flex-direction:column;
         justify-content:center;
-        align-items:center;
+        align-items:flex-start;
+        padding:10px;
         width:100%;
         margin:10px;
         height:100%;
     }
     
     .main_title {
-        font-size:1.8em;
-        padding-left:10px;
+        
         color: var(--primary-title-color);
-        font-weight:900;
         text-align: start;
     }
+
+    .main_title h1  {
+        font-size:2.1em;
+        font-weight:600;
+        margin-bottom:10px;
+    }
+
     .paragraph_area {
         font-size: var(--paragraph-form-size);
-        width:400px;
-        margin: 23px 0px 0px 0px;
-        padding-left:10px;
+        width:100%;
         height:80px;
 
     }
@@ -60,7 +64,6 @@
     .list_item  {
         display:flex;
         align-items:center;
-        padding:10px;
     }
     .list_item_image   {
         display:block;
@@ -72,22 +75,25 @@
     .form   {
         display:flex;
         flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        width:330px;
+        justify-content: space-between;
+        align-items: flex-start;
+        width:400px;
+        height:100%;
+        padding:5px;
     }
 
     .form label {
+        display:flex;
         font-size: 0.8em;
         font-weight:700;
-        margin-left:23px;
     }
+    
     .form input {
         width:100%;
-        height:40px;
+        margin-bottom:10px;
+        height:60px;
         border: gray 1px solid;
         border-radius:10px;
-        margin-left:20px;
         margin-top:10px;
         text-indent:20px;
     }
@@ -101,18 +107,28 @@
     }
     .submit_btn_main:hover    {
         background-color:#37384e;
-        animation: width_zero 1.2s forwards;
+        animation: width_zero2 1.2s forwards;
 
     }
 
-    @keyframes width_zero {
+    .wrap_mailEvent {
+        display:flex;
+        justify-content:space-between;
+        width:100%;
+    }
+
+    .alert_message  {
+        color:red;
+    }
+
+    @keyframes width_zero2 {
         0%{
             font-size: 8px;
-            width: 330px;
+            width: 398px;
         }
         50% {
             font-size:12px;
-            width: 265px;
+            width: 395px;
         }
         100% {
             
@@ -120,7 +136,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             border: solid 2px purple;
-            width: 330px;
+            width: 398px;
         }
         
     }
