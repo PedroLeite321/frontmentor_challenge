@@ -51,9 +51,14 @@
     width:100%;
 }
 
-.main_title h1 {
+.main_title {
     font-size: var(--primary-title-size);
     color: var(--primary-title-color);
+    margin-bottom:10px;
+}
+
+.main_title h1 {
+    
     margin-bottom: 10px;
 }
 
@@ -148,5 +153,92 @@
 .submit_btn_main:active  {
     transform:translateY(3px);
 } 
+
+.success_message_container  {
+    background-color:#37384e;
+    height:100vh;
+    width:100%;
+    min-width:500px;
+    padding:30px;
+    border-radius:30px;
+}
+
+.form_thanks_area   {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: flex-start;
+    width:100%;
+    height:100%;
+    padding:30px;
+    background-color:white;
+
+}
+
+.form_thanks_area button    {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border:none;
+    border-radius:5px;
+    font-size: var(--secondary-button-sucess-area);
+    color: #ffffff;
+    padding:10px;
+    background-color: #232742;
+    margin-top:25px;
+    margin-bottom:25px;
+    height:35px;
+    width:240px;
+    transition: background 1s ease-in-out;
+    
+}
+
+.form_thanks_area button:hover  {
+    padding:2px;
+    animation: width_zero 1.2s forwards;
+    background: rgb(37,3,59);
+    background: linear-gradient(303deg, rgba(37,3,59,1) 0%, rgb(51, 39, 62) 51%, rgba(37,3,59,1) 100%);
+}
+
+@keyframes width_zero {
+    0%{
+        font-size: 8px;
+        width: 240px;
+    }
+    50% {
+        font-size:12px;
+        width: 120px;
+    }
+    100% {
+        
+        background: -webkit-linear-gradient(#d47fff, #4921c0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: solid 2px purple;
+        width: 240px;
+    }
+    
+}
+
+.form_thanks_area button:active {
+    transform: translateY(2px);
+}
+
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-top:2px solid black;
+    height:50px;
+    width:100%;
+    padding:10px;
+}
+
+.attribution    {
+    font-size:1.1em;
+    font-weight:700px;
+}
+
+
 
 }

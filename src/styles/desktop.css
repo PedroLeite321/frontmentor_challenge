@@ -251,6 +251,21 @@
     transform: translateY(2px);
 }
 
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-top:2px solid black;
+    height:50px;
+    width:100%;
+    padding:10px;
+}
+
+.attribution    {
+    font-size:1.1em;
+    font-weight:700px;
+}
+
 
 
 }

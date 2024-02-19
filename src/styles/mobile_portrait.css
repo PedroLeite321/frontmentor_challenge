@@ -203,7 +203,7 @@
         background-color: #232742;
         margin-top:25px;
         margin-bottom:25px;
-        height:35px;
+        height:45px;
         width:240px;
         transition: background 1s ease-in-out;
         
@@ -223,7 +223,7 @@
         }
         50% {
             font-size:12px;
-            width: 120px;
+            width: 230px;
         }
         100% {
             
@@ -239,4 +239,21 @@
     .form_thanks_area button:active {
         transform: translateY(2px);
     }
+
+    .footer {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-top:2px solid black;
+        height:50px;
+        width:100%;
+        padding:10px;
+    }
+    
+    .attribution    {
+        font-size:1.1em;
+        font-weight:700px;
+    }
+
+    
 }
