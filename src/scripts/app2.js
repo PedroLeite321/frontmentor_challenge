@@ -10,7 +10,7 @@ const reloadMain = () =>    {
     
     states.dismissBtn.addEventListener('click', (e) =>   {
         e.preventDefault();
-        window.location.href = "/frontmentor_challenge/index.html";
+        window.location.href = "https://pedroleite321.github.io/frontmentor_challenge/";
     });
 
 
