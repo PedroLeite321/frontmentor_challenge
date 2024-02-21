@@ -24,15 +24,14 @@ const loadSucessPage = () =>    {
             states.alertNoInput.innerHTML = "Email is Empty";
             alertMsg = states.alertNoInput.innerHTML;
 
-        }else if(states.emailInput.value.includes("@") === false)   {
+        }else if(states.emailInput.value.includes("@gmail.com") === false)   {
             states.alertNoInput.innerHTML = "Valid email required";
             alertMsg = states.alertNoInput.innerHTML;
         }
-        
         else{
             states.alertNoInput.innerHTML = "";
             e.preventDefault();
-            window.location.href = "../../src/pages/thanks.html";
+            window.location.href = "./src/pages/thanks.html";
             
         }
     });
